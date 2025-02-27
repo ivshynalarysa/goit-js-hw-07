@@ -161,5 +161,38 @@ img {
   border: 1px solid #000;
 }
 
+/** task 4 **/
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+}
+
+.login-form label {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+}
+
+.login-form input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  outline: transparent;
+  padding: 8px 16px;
+  margin-top: 8px;
+}
+
+.login-form input:focus {
+  border: 1px solid #000;
+}
+
+.login-form .button-blue {
+  width: 86px;
+  height: 40px;
+}
+
 
 
