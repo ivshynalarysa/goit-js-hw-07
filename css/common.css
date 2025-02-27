@@ -48,7 +48,7 @@ img {
 .task-button {
   display: inline-block;
   border-radius: 8px;
-  background-color: #6C8CFF;
+  background-color: #4e75ff;
   color: #FFF;
   font-size: 16px;
   font-weight: 500;
@@ -56,15 +56,16 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 8px 16px;
   margin-bottom: 15px;
+  
 }
 
 .task-button:hover {
-  background-color: #cd4eff;
+  background-color: #6c8cff;
 }
 
 .button-blue {
   border-radius: 8px;
-  background-color: #6C8CFF;
+  background-color: #4e75ff;
   color: #FFF;
   border: none;
   font-size: 16px;
@@ -75,7 +76,7 @@ img {
 }
 
 .button-blue:hover {
-  background-color:#cd4eff;
+  background-color:#6c8cff;
 }
 
 .goback {
@@ -86,23 +87,22 @@ img {
 /**task 1**/
 
 #categories {
-
+display: flex;
+flex-direction: column;
   
   gap: 24px;
 }
 
 .item {
-  
-  
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
+  
+ 
   gap: 16px;
   border-radius: 8px;
   padding: 16px;
-  width: 392px;
-  height: 264px;
+  
+  
   background: #f6f6fe;
 
 }
@@ -114,23 +114,29 @@ img {
   line-height: 1.33333;
   letter-spacing: 0.04em;
   color: #2e2f42;
+  margin-bottom: 16px;
 }
 
 .item-list  {
 display: flex;
-align-items: flex-start;
-justify-content: flex-start;
 flex-direction: column;
 gap: 8px;
-width: 360px;
-height: 184px;
+
+
 }
 
 .item-list li {
-  width: 360px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #2e2f42;
+  padding-left: 16px;
   height: 40px;
   border-radius: 8px;
-  border-color: #212121;
+  border: 1px solid #808080;
 }
 
 .item-list li:not(:last-child) {
@@ -155,6 +161,8 @@ height: 184px;
 /** task 3 **/
 
 #name-input {
+  width: 360px;
+height: 40px;
   border-radius: 4px;
   border: 1px solid #808080;
   outline: transparent;
@@ -219,7 +227,17 @@ height: 184px;
 
 /**task 6 **/
 #controls {
+  display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: row;
+gap: 16px;
   margin-bottom: 32px;
+  border-radius: 8px;
+padding: 32px;
+
+height: 104px;
+background: #f6f6fe;
 }
 
 #controls .button-blue:last-child {
@@ -233,9 +251,20 @@ height: 184px;
 
 #controls .button-blue {
   margin-left: 16px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+
 }
 
 #controls input {
+  
+  padding: 8px 72px;
+  width: 150px;
+  height: 40px;
+
+
   border-radius: 8px;
   border: 1px solid #808080;
   outline: transparent;
@@ -243,7 +272,7 @@ height: 184px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
-  padding: 4px 16px;
+  
 }
 
 #controls input:focus {
@@ -252,9 +281,13 @@ height: 184px;
 
 #boxes {
   display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+
+  
+  background: #f6f6fe;
 }
 
 
