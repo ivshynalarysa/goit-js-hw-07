@@ -86,35 +86,51 @@ img {
 /**task 1**/
 
 #categories {
-  display: flex;
-  flex-wrap: wrap;
+
+  
   gap: 24px;
 }
 
 .item {
   
   
-  max-width: 360px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
   border-radius: 8px;
-  background-color: rgb(0, 255, 255);
-  padding: 50px;
+  padding: 16px;
+  width: 392px;
+  height: 264px;
+  background: #f6f6fe;
+
 }
 
 .categories-tittle {
-  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  line-height: 1.33;
+  font-size: 24px;
+  line-height: 1.33333;
   letter-spacing: 0.04em;
-  margin-bottom: 20px;
+  color: #2e2f42;
+}
+
+.item-list  {
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 8px;
+width: 360px;
+height: 184px;
 }
 
 .item-list li {
-  border-radius: 4px;
-  border: 1px solid #80808049;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  border-radius: 8px;
+  border-color: #212121;
 }
 
 .item-list li:not(:last-child) {
